@@ -1,6 +1,6 @@
 package sda.iasi5.day3;
 
-public class Item {
+public class Item implements Comparable<Item> {
 
   private String name;
   private double weight;
@@ -42,6 +42,14 @@ public class Item {
         "name='" + name + '\'' +
         ", weight=" + weight +
         ", value=" + value +
+        ", profit=" + value / weight +
         '}';
+  }
+
+  @Override
+  public int compareTo(Item anotherItem) {
+    double profit1 = value / weight;
+    double profit2 = anotherItem.value / anotherItem.weight;
+    return Double.compare(profit2, profit1);
   }
 }

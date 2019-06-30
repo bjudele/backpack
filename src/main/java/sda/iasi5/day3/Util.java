@@ -16,7 +16,7 @@ import java.util.Random;
 
 public class Util {
 
-  public static final String PATH_TO_FILE = "resources/problem.json";
+  public static final String PATH_TO_FILE = "problem.json";
   public static final String[] itemNamesList = {"laptop", "bottle", "phone",
       "sunglasses", "book", "pen", "radio"};
 
