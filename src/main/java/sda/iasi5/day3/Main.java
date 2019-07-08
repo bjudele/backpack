@@ -12,6 +12,7 @@ public class Main {
     problem.setBackpack(new Backpack(12));
     List<Item> generatedItems = Util.generateItems(100);
     problem.setAvailableItems(generatedItems);
+    problem.showTotalValueForEachItem();
 
     System.out.println("SORTATED BY PROFIT");
     problem.moveProfitableItemsToBackpack();

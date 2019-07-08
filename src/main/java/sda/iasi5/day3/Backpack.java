@@ -38,10 +38,12 @@ public class Backpack {
     return sumOfWeights;
   }
 
-  public void add(Item item) {
+  public boolean add(Item item) {
     if (getAvailableCapacity() >= item.getWeight()) {
       itemList.add(item);
+      return true;
     }
+    return false;
   }
 
   public double getAvailableCapacity() {
